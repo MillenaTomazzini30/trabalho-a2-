@@ -1,0 +1,26 @@
+function validar_campo (){
+	var txt = document.getElementById ("txtnome");
+	var nome = txt.value;
+	
+	if(nome.length <5) {
+		
+		alert( " no espaço do nome deve conter no minimo 5 caracteres");
+		return false;
+}else{
+	return true;
+	
+	}
+}
+
+
+function validar_preco(){
+		var txt = document.getElementById("txtpreco");
+		var preco = txt.value;
+		
+		if (preco.value > 0){
+			return true;
+		}else{
+				alert(" O valor não pode ser menor que zero (negativo)" );
+				return false;
+		}
+}
